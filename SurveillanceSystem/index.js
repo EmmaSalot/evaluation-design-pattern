@@ -9,3 +9,12 @@ thermalB.triggerHeatSignature((data) => console.log(data));
 
 const thermalAdapter = new ThermalSensorBAdapter("04");
 thermalAdapter.onDetect((message) => console.log(message));
+
+const email = new EmailNotification("test@gmail.com");
+email.notify("notification email");
+
+const log = new LogNotification();
+log.notify("notification log");
+
+const discord = new DiscordNotification("discord-server");
+discord.notify("notification discord");
