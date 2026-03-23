@@ -1,5 +1,6 @@
 class LogNotification {
-    constructor() {}
+    constructor() {
+    }
 
     notify(message) {
         console.log("log : " + message);
